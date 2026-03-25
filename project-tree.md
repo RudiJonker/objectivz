@@ -12,11 +12,15 @@ OBJECTIVZ/
 │   │   ├── profile/
 │   │   │   └── index.jsx
 │   │   └── _layout.jsx
-│   └── (auth)/
-│       ├── forgot-password.jsx
-│       ├── login.jsx
-│       ├── signup.jsx
-│       └── welcome.jsx
+│   ├── (auth)/
+│   │   ├── forgot-password.jsx
+│   │   ├── login.jsx
+│   │   ├── reset-password.jsx
+│   │   ├── signup.jsx
+│   │   ├── verify-reset-code.jsx
+│   │   ├── welcome.jsx
+│   │   └── _layout.jsx
+│   └── _layout.jsx
 ├── assets/
 │   ├── android-icon-background.png
 │   ├── android-icon-foreground.png
@@ -37,9 +41,8 @@ OBJECTIVZ/
 │   ├── auth.js
 │   └── supabase.js
 ├── .gitignore
-├── App.js
 ├── app.json
 ├── generateTree.js
-├── index.js
 ├── package-lock.json
-└── package.json
+├── package.json
+└── project-tree.md
