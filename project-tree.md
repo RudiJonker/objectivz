@@ -1,0 +1,45 @@
+OBJECTIVZ/
+├── app/
+│   ├── (app)/
+│   │   ├── goals/
+│   │   │   ├── create.jsx
+│   │   │   └── index.jsx
+│   │   ├── my-tasks/
+│   │   │   └── index.jsx
+│   │   ├── org/
+│   │   │   ├── index.jsx
+│   │   │   └── invite.jsx
+│   │   ├── profile/
+│   │   │   └── index.jsx
+│   │   └── _layout.jsx
+│   └── (auth)/
+│       ├── forgot-password.jsx
+│       ├── login.jsx
+│       ├── signup.jsx
+│       └── welcome.jsx
+├── assets/
+│   ├── android-icon-background.png
+│   ├── android-icon-foreground.png
+│   ├── android-icon-monochrome.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash-icon.png
+├── components/
+│   ├── CommentThread.jsx
+│   ├── GoalCard.jsx
+│   ├── StatusBadge.jsx
+│   └── StepItem.jsx
+├── constants/
+│   └── theme.js
+├── hooks/
+│   └── useAuth.js
+├── lib/
+│   ├── auth.js
+│   └── supabase.js
+├── .gitignore
+├── App.js
+├── app.json
+├── generateTree.js
+├── index.js
+├── package-lock.json
+└── package.json
