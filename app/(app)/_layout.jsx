@@ -1,8 +1,11 @@
 import { Tabs } from 'expo-router';
 import { colors, fonts } from '../../constants/theme';
 import { Ionicons } from '@expo/vector-icons';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function AppLayout() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tabs
       screenOptions={{
@@ -11,9 +14,9 @@ export default function AppLayout() {
           backgroundColor: colors.surface,
           borderTopColor: colors.border,
           borderTopWidth: 1,
-          paddingBottom: 6,
+          paddingBottom: insets.bottom || 8,
           paddingTop: 6,
-          height: 60,
+          height: 60 + (insets.bottom || 0),
         },
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textSecondary,
@@ -59,8 +62,6 @@ export default function AppLayout() {
           ),
         }}
       />
-
-      {/* Hidden screens — exist in the router but don't show as tabs */}
       <Tabs.Screen name="goals/create" options={{ href: null }} />
       <Tabs.Screen name="org/invite" options={{ href: null }} />
     </Tabs>
