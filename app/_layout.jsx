@@ -5,6 +5,7 @@ import { View, ActivityIndicator } from 'react-native';
 import { colors } from '../constants/theme';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+
 export default function RootLayout() {
   const [session, setSession] = useState(undefined);
   const router = useRouter();

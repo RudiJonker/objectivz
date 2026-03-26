@@ -64,6 +64,7 @@ export default function AppLayout() {
       />
       <Tabs.Screen name="goals/create" options={{ href: null }} />
       <Tabs.Screen name="org/invite" options={{ href: null }} />
+      <Tabs.Screen name="goals/[id]" options={{ href: null }} />
     </Tabs>
   );
 }
